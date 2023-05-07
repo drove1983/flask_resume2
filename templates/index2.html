@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br/>
+<center>
+     <h1>Hello {{ ime}}!!</h1>
+<br/>
+{{ omiljena_pica }}
+<br/>
+<ul>
+{% for prilog in omiljena_pica %}
+
+     <li>{{ prilog }}</li>
+
+ {% endfor %}
+</ul>
+
+</center>
+
+
+{% endblock %}
